@@ -1,156 +1,109 @@
-# LUNA NAV
+<div align="center">
 
-LUNA NAV is a lunar mission planning and landing-site exploration platform built around NASA open data. The app helps researchers and mission planners explore the lunar south pole, compare candidate landing regions, analyze terrain and illumination, and assess mission-relevant constraints using interactive visualizations.
+# 🌕 LUNA NAV
 
-This project is a lightweight static web application: no install step, no build pipeline, and no API key required for the core experience.
+### Explore the lunar south pole. Compare candidate sites. Plan with evidence.
 
-## Why this project matters
+**An interactive lunar exploration and preliminary mission-planning platform powered by NASA open data.**
 
-The Moon remains a challenging environment for surface operations. Landing-site selection depends on several interacting factors:
+[Explore the project](https://github.com/nyxaraindia/LUNA-NAV) · [Run it locally](#-get-started) · [Science & data](SCIENCE_AND_DATA.md)
 
-- terrain slope and roughness
-- illumination and solar visibility
-- proximity to scientifically valuable features
-- accessibility of traverse paths
-- mission constraints such as line-of-sight and energy assumptions
+</div>
 
-LUNA NAV makes these criteria easier to reason about through a map-based workspace, a polar viewing mode, candidate comparison tables, and mission-planning tools.
+---
 
-## Key features
+## 🚀 The challenge
 
-- Interactive lunar map and polar exploration view
-- Candidate landing-site comparison for the south polar region
-- Terrain and illumination analysis using NASA datasets
-- Mission metrics including distance, bearing, and approximate drive time
-- Decision matrix for comparing site options by weighted criteria
-- Shareable candidate selection links
-- Export support for GeoJSON, CSV, and JSON
-- NASA data hub with source checks and dataset references
-- Local rule-based assistant for mission guidance and site interpretation
+The lunar south pole is a compelling destination for future exploration—and a demanding place to plan surface operations. Terrain, illumination, traverse access, and mission constraints all matter when evaluating a potential landing region.
 
-## Project highlights
+**LUNA NAV brings these considerations into one browser-based workspace.** Explore the lunar surface, inspect available terrain and illumination information, and compare candidate sites using clear, practical planning tools.
 
-- Built as a static HTML/CSS/JavaScript application
-- Uses NASA open imagery and lunar data products
-- Built for browser-based exploration and rapid analysis
-- Mobile-friendly interface for field and workshop usage
-- Designed for research and concept exploration rather than operational flight software
+## 🗺️ What you can do
 
-## Tech stack
+- **Explore the Moon** with an interactive lunar map and polar viewing mode.
+- **Compare candidate landing sites** in the south polar region.
+- **Review terrain and illumination context** from NASA datasets and linked sources.
+- **Estimate mission metrics**, including distance, bearing, and approximate drive time.
+- **Use a weighted decision matrix** to compare site options against selected criteria.
+- **Share candidate selections** through shareable links.
+- **Export your work** in GeoJSON, CSV, and JSON formats.
+- **Consult the NASA data hub** for source checks and dataset references.
+- **Ask the local, rule-based assistant** for mission guidance and site interpretation.
 
-- HTML
-- CSS
-- JavaScript
-- Python utility scripts for data preparation and sample support
+## 🌑 Why LUNA NAV?
 
-## Repository structure
+Lunar science data can be difficult to navigate and compare. LUNA NAV connects maps, source information, and early-stage planning concepts in an accessible interface—helping students, researchers, and space enthusiasts investigate candidate regions and understand the questions mission planners face.
 
-```text
-LUNA-NAV/
-├── README.md
-├── HACKATHON_DEMO.md
-├── SCIENCE_AND_DATA.md
-├── TEAM_CHECKLIST.md
-├── index.html
-├── app.js
-├── nasa.js
-├── v2.js
-├── styles.css
-├── theme.css
-├── manifest.webmanifest
-├── assets/
-├── data/
-├── tools/
-└── ...
-```
+The project is designed around **transparent exploration**: distinguish data from interpretation, make source references easy to find, and show unavailable information as unavailable rather than presenting unsupported values as facts.
 
-## Run locally
+## 🛰️ Data and scientific context
 
-1. Clone the repository.
-2. Open the project folder.
-3. Launch `index.html` in a modern browser.
+LUNA NAV references publicly available lunar data and imagery, including:
 
-Example:
+- **NASA Moon Trek** imagery
+- **Lunar Reconnaissance Orbiter (LRO) LOLA** data and derived terrain context
+- Publicly available planetary datasets for research exploration
+
+Data availability, coverage, and resolution can vary. See [`SCIENCE_AND_DATA.md`](SCIENCE_AND_DATA.md) for additional scientific and dataset context, and [`HACKATHON_DEMO.md`](HACKATHON_DEMO.md) for showcase notes.
+
+## 🧭 Typical workflow
+
+1. Open the map and explore the lunar south pole.
+2. Select a candidate site or define locations for comparison.
+3. Review the available terrain, illumination, and mission metrics.
+4. Compare candidates with the decision matrix.
+5. Share or export selections for further review.
+
+## 💻 Get started
+
+LUNA NAV is a lightweight static web application. There is no build step or API key required for the core experience.
 
 ```bash
 git clone https://github.com/nyxaraindia/LUNA-NAV.git
 cd LUNA-NAV
-# Open index.html in your browser
 ```
 
-Notes:
+Then open `index.html` in a modern web browser.
 
-- Some layers and NASA-hosted data sources load from the web, so internet access is recommended.
-- The project is designed to work without a build step or API key for the main workflow.
-- If NASA data retrieval is limited by CORS or remote access restrictions, the project includes fallback handling and sample-data paths.
+**Notes:** Internet access is recommended for remotely hosted NASA layers and data. If remote retrieval is limited by CORS or other access restrictions, the app includes fallback handling and sample-data paths.
 
-## Core user workflow
+## 🧰 Built with
 
-1. Open the map and inspect the lunar south pole region.
-2. Select a candidate landing site or manually define locations.
-3. View terrain and illumination information for each candidate.
-4. Compare sites using the decision matrix and mission metrics.
-5. Export or share the selected candidates for further review.
+- HTML, CSS, and JavaScript
+- Python utility scripts for data preparation and sample support
+- NASA open imagery and lunar data products
 
-## Data and scientific background
+## 📁 Project documentation
 
-LUNA NAV is grounded in publicly available NASA lunar data products, especially those relevant to south-pole terrain characterization and landing-site assessment.
+| Document | What it covers |
+| --- | --- |
+| [`SCIENCE_AND_DATA.md`](SCIENCE_AND_DATA.md) | Scientific context, datasets, and sources |
+| [`HACKATHON_DEMO.md`](HACKATHON_DEMO.md) | Demo and showcase notes |
+| [`TEAM_CHECKLIST.md`](TEAM_CHECKLIST.md) | Team workflow and planning checklists |
 
-The app references sources and methods including:
+## ⚠️ Scope and limitations
 
-- NASA Moon Trek imagery
-- LRO LOLA data and derived terrain context
-- Polar-view mission and illumination analysis
-- Open-source planetary datasets for research exploration
+**LUNA NAV is a preliminary exploration and planning tool—not a certified lunar landing safety system or operational flight software.** Its maps, metrics, and comparisons are intended for research exploration, education, and early-stage concept work. They do not replace validated engineering analysis, mission-specific data, or expert review. Approximate calculations and remote dataset limitations should be considered when interpreting results.
 
-For a deeper scientific breakdown, see:
+## 📚 References
 
-- `SCIENCE_AND_DATA.md`
-- `HACKATHON_DEMO.md`
+- Barker et al. (2023), *A New View of the Lunar South Pole from LOLA*.
+- NASA/GSFC/Arizona State University LRO WAC imagery via NASA Moon Trek.
 
-## Mission planning features
+Additional references and dataset notes are documented in the project files.
 
-The app supports the following planning and analysis concepts:
+## 🤝 Contributing
 
-- site prioritization based on mission constraints
-- compare candidate landing areas across a set of criteria
-- evaluate approximate traverse distance and direction
-- review illumination and visibility assumptions
-- provide structured summaries for researchers and hackathon teams
+Contributions and feedback are welcome, especially on scientific validation, dataset quality, visualization, accessibility, mobile usability, and documentation. Please open an issue to discuss a proposed change.
 
-## Honesty and constraints
+## 📄 License
 
-The project explicitly avoids inventing missing data. Where data is unavailable, values are shown as unavailable rather than estimated without evidence. This is important for scientific exploration and transparent mission analysis.
+No formal license is currently declared in the repository metadata. Please review the repository files and confirm permissions before reusing or redistributing the project.
 
-## Citation and references
+---
 
-The project includes references to lunar data literature and NASA dataset sources. Key references are documented in the project files and README notes.
+<div align="center">
 
-Main scientific reference included in the repo:
+**Explore the terrain. Compare the possibilities. Look toward the Moon.**
 
-- Barker et al. (2023), A New View of the Lunar South Pole from LOLA
-- NASA/GSFC/Arizona State University LRO WAC imagery via NASA Moon Trek
-
-## Project documentation
-
-- `README.md` — overview and local run instructions
-- `SCIENCE_AND_DATA.md` — deeper scientific and dataset context
-- `HACKATHON_DEMO.md` — demo and showcase notes
-- `TEAM_CHECKLIST.md` — team workflow and planning checklists
-
-## License
-
-This repository does not currently declare a formal license in the project metadata. Please check the repository files before reusing it in commercial or public deployments.
-
-## Contributing
-
-Contributions are welcome for:
-
-- scientific validation and dataset improvements
-- UX and visualization enhancements
-- data-source integration and documentation
-- performance and mobile usability improvements
-
-## Contact
-
-Repository: https://github.com/nyxaraindia/LUNA-NAV
+</div>
